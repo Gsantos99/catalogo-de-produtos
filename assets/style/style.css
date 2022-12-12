@@ -9,8 +9,6 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
   /* background-color:#e1e3e6; */
   background-color: #e2df9a;
 }
@@ -94,7 +92,6 @@ main {
 /* Container  */
 
 .container {
-  height: 80vh;
   /* background-color: royalblue; */
   gap: 10px;
   padding: 10px;
@@ -107,8 +104,8 @@ main {
 /* Card */
 
 .produto {
-  width: 250px;
-  height: min-content;
+  width: min-content;
+  height: 400px;
   padding: 25px;
   border-radius: 20px;
   background-color: #ffffff;
@@ -124,7 +121,7 @@ main {
 
 .produto .produto-header h3 {
   color: #404d61;
-  font-size: 1.7rem;
+  font-size: 1.25rem;
 }
 
 .produto .produto-header p {
@@ -143,10 +140,10 @@ main {
 
 .produto .produto-img {
   /* position: relative; */
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border-radius: 12px;
-  margin: 22px 0;
+  margin: 10px 0;
   overflow: hidden;
 }
 
@@ -156,14 +153,16 @@ main {
   transition: 0.4s;
 }
 
-.produto:hover .produto-img:hover {
+.produto:hover .produto-img img {
   transform: scale(1.06);
 }
+
+
 
 /* Footer */
 
 footer {
-  height:auto;
+  height: auto;
   display: flex;
   order: 3;
   flex-direction: row;
@@ -200,6 +199,7 @@ footer > ul {
     text-align: center;
     display: block;
     transition: all 0.3s ease;
+
   }
 
   .navBar ul.open {
@@ -220,5 +220,4 @@ footer > ul {
     background: none;
     color: #ffff;
   }
-  
 }
