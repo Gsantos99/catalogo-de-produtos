@@ -1,0 +1,224 @@
+/* Geral  */
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  /* background-color:#e1e3e6; */
+  background-color: #e2df9a;
+}
+
+/* Textos */
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  color: #043e47;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+/* Main */
+
+main {
+  padding: 10px;
+  /* background-color: bisque; */
+}
+
+.nome-loja {
+  font-family: 'Satisfy', cursive;
+}
+
+/* NavBar */
+
+.navBar {
+  background-color: #043e47;
+  display: flex;
+  height: auto;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  flex-wrap: wrap;
+}
+
+.navBar > .logo {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.navBar > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.navBar > ul > li {
+  margin: 0 0.5rem;
+}
+
+.navBar > ul > li > a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-weight: 500;
+  padding: 0.8rem 0.8rem;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.navBar > ul > li > a:active,
+.navBar > ul > li > a:hover {
+  background-color: #02191d;
+}
+
+/* NavBar logo  */
+
+.navBar .menu-btn i {
+  color: #ffff;
+  cursor: pointer;
+  display: none;
+}
+
+/* Container  */
+
+.container {
+  height: 80vh;
+  /* background-color: royalblue; */
+  gap: 10px;
+  padding: 10px;
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+/* Card */
+
+.produto {
+  width: 250px;
+  height: min-content;
+  padding: 25px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: 2px solid #e1e3e6;
+  transition: 0.4s;
+}
+
+.produto:hover {
+  border-color: #ffffff;
+  transform: translateY(-10px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+.produto .produto-header h3 {
+  color: #404d61;
+  font-size: 1.7rem;
+}
+
+.produto .produto-header p {
+  color: #757d8a;
+  font-size: 1rem;
+}
+
+.produto .produto-header span {
+  color: #3cf44e;
+  background-color: #f3f0f0;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.produto .produto-img {
+  /* position: relative; */
+  height: 200px;
+  width: 200px;
+  border-radius: 12px;
+  margin: 22px 0;
+  overflow: hidden;
+}
+
+.produto .produto-img img {
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+
+.produto:hover .produto-img:hover {
+  transform: scale(1.06);
+}
+
+/* Footer */
+
+footer {
+  height:auto;
+  display: flex;
+  order: 3;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0 10px;
+  padding: 1rem;
+  background-color: #043e47;
+}
+
+footer > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  list-style: none;
+}
+
+/* TODORetirar os nomes dos integrantes em width menor que 500px */
+
+/* Medias queries  */
+
+@media (max-width: 920px) {
+  .navBar > .menu-btn > i {
+    display: block;
+  }
+
+  .navBar > ul {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    background-color: #02191d;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  .navBar ul.open {
+    left: 0;
+  }
+
+  .navBar > ul > li {
+    width: 100%;
+    margin: 50px 0;
+  }
+
+  .navBar > ul > li > a {
+    font-size: 25px;
+  }
+
+  .navBar ul li a.active,
+  .navBar ul li a:hover {
+    background: none;
+    color: #ffff;
+  }
+  
+}
