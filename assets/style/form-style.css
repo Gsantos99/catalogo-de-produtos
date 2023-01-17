@@ -1,2 +1,25 @@
+.nome-loja {
+  font-family: 'Satisfy', cursive;
+}
+
+main {
+  /* background-color: red; */
+}
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #e1e3e6;
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  padding: 1rem;
+  gap: 10px;
+  border-radius: 15px;
+  padding: 2rem;
+}
 
 

@@ -9,6 +9,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,8 +33,6 @@
     <title>Formulário de adição</title>
   </head>
 
- 
-
   <body>
     <header>
       <nav class="navBar">
@@ -53,7 +53,41 @@
     </header>
 
     <main>
+
       <h1>Formulário de adição de produtos</h1>
+      
+      <form action="#">
+        <label for="nome-produto">Nome do produto:</label>
+        <input type="text" name="nome-produto" id="nome-produto" required />
+
+        <label for="descricao-produto">Descrição do produto:</label>
+        <input
+          type="text"
+          name="descricao-produto"
+          id="descricao-produto"
+          maxlength="25"
+          required 
+        />
+        
+        <label for="preco-produto">Preço (sem desconto): </label>
+        <input type="number"  name="preco-produto" id="preco-produto" required >
+
+        <label for="img-produto">Endereço da imagem:</label>
+        <input type="url" placeholder="https://example.com" pattern="https://.*" size="30"
+        required name="img-produto" id="img-produto" />
+
+
+        <label for="desconto-produto">Desconto (se houver): </label>
+        <input type="number " name="desconto-produto" id="desconto-produto" />
+
+         
+        <button type="submit" id="btn-cadastrar">Cadastrar</button>
+
+      
+
+      </form>
+
+
     </main>
 
     <script src="/assets/js/main.js"></script>
